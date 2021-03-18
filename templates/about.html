@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block aboutactive %} active {% endblock aboutactive %}
+{% block title %}About{% endblock title %}
+{% block body %}
+    <!-- Cards customization -->
+    <div class="container my-3">
+        <h2 class="text-center my-3 py-3">About Me</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://source.unsplash.com/500x300/?college,graduate" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Student</h5>
+                        <p class="card-text">Pursuing Bachelors in Computer Engineering from Mumbai University.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://source.unsplash.com/500x300/?laptop,laptop" class="card-img-top" alt="code-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Programmer</h5>
+                        <p class="card-text">Coder who focuses on developing clean, elegant and efficient. Love Java,
+                            Python, C and somewhat Django.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://source.unsplash.com/500x300/?html,css" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Dev</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock body %}

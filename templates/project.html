@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block projectactive %} active {% endblock projectactive %}
+{% block title %}Project{% endblock title %}
+{% block body %}
+    <!-- Cards customization -->
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/img/calc.JPG" class="card-img-top" alt="Calculator-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Simple Calculator GUI</h5>
+                        <p class="card-text">A Simple Calculator GUI made by using python and tkinter package.
+                            Functions include: Operations like Addition, Subtraction, Multiplication and Divison.</p>
+                        <a href="https://github.com/OmegaCoding5505/Simple-Calculator-GUI" target="_blank"
+                            class="btn btn-primary">Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cutt.ly/wz8o7MD" class="card-img-top" alt="Flappy-Bird-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Flappy Bird 2D</h5>
+                        <p class="card-text">Fully Fledged Flappy Bird Game made from scratch using Unity 2D.</p>
+                        <a href="https://github.com/OmegaCoding5505/Flappy-Bird-2D" target="_blank"
+                            class="btn btn-primary">Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/img/portfolio.jpg" class="card-img-top" alt="portfolio-home-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Django portfolio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" target="_blank" class="btn btn-primary">Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}

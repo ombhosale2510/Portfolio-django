@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block contactactive %} active {% endblock contactactive %}
+{% block title %}Contact{% endblock title %}
+{% block body %}
+    <!-- Form customization -->
+    <div class="container my-3">
+        <h2 class="text-center">Contact me for enquiry.</h2>
+        <form action="/contact" , method="post">
+            {% csrf_token %}
+            <div class="row mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="fname"
+                        name="fname">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lname"
+                        name="lname">
+                </div>
+            </div>
+            <div class="col mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Contact Number</label>
+                <input type="phone" class="form-control" placeholder="Your number" id="phone" name="phone">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" placeholder="name@example.com" id="email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Explain your concern</label>
+                <textarea class="form-control" rows="3" id="desc" name="desc"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+
+{% endblock body %}
